@@ -47,6 +47,10 @@ var JsonDataFaker = {
     return Internet.username[this.getRandNumber(0,Internet.username.length)]
   },
 
+  email(){
+    return this.username() + this.getRandNumber(0,999) + "@" + Internet.email[this.getRandNumber(0,Internet.email.length)]
+  },
+
   getRandNumber(min, max){
     min = Math.ceil(min);
     max = Math.floor(max);
